@@ -3,15 +3,16 @@ package com.company;
 import javax.swing.*;
 
 public class Window extends JFrame {
-    Window(){
 
-        setVisible(true);
-        setBounds(190, 0, 800,650);
-        setTitle("SnakeGame");
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
+    Window() {
+        Panel panel = new Panel();
+        this.getContentPane().add(panel);
 
-        getContentPane().add(new Graf());
+        this.setTitle("Snake");
+        this.setBounds(0, 0, 800, 650);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setResizable(false);
+        this.setVisible(true);
     }
-}
 
+}
